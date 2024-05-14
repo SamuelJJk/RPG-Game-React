@@ -1,38 +1,58 @@
 .App {
+  border: solid black;
+  margin: 4em auto;
+  width: 980px;
+  height: 630px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*---------------------------------------------- Home */
+.homebase{
+  position: relative;
+  border:1px solid black;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.backImg{
+  opacity: .6;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.statsWindow{
+  /* border:solid red; */
+  height: 5%;
+}
+.gameWindow{
+  /* border: solid indigo; */
+  height: 70%;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.messageWindow{
+  /* border: solid orangered; */
+  height: 25%;
+}
+.homeOptions{
+  background-color: rgba(250, 235, 215, 0.745);
+  border: solid blue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+}
+.options{
+  border-radius: 10px;
+  background-color: white;
+  width: 100px;
+  height: 80px;
+}
+.options:hover{
+  background-color: lightgray;
+  cursor: pointer;
 }

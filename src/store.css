@@ -1,0 +1,17 @@
+.storeWindow{
+    /* border: solid orange; */
+    height: 100%;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: azure;
+}
+.storeItems,.storePreview{
+    border: solid black;
+}
+.storeItems{
+    width: 30%;
+}
+.storePreview{
+    width: 70%;
+}
